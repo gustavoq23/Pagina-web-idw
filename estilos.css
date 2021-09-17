@@ -9,3 +9,43 @@
     display: block;
     width: 100%;
   }
+  .main-header {
+    padding: 0 20px;
+  }
+
+  .main-header__title {
+    text-align: center;
+    font-size: 2.5em;  /*posicion y tamaño titulo*/
+    margin: 10px 0;
+    color: #454546
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .icon__item {
+      font-size: 1.5em;
+      border: 1px solid #454546;
+      display: block;
+      padding: 10px 15px;
+}
+.main-header__btn{
+  display: block;
+  padding: 10px 30px;
+  color: #454546;
+  border: 1px solid #454546;
+  text-decoration: none;
+}
+
+.main-header__input{
+  display: block;
+  padding: 10px;
+  width: 50%;
+}
