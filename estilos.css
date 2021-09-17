@@ -1,1 +1,11 @@
-css
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: "Inconsolata";
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
