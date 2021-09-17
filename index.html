@@ -5,36 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title> <!--Titulo navegador--> 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"><!--Link iconos usados-->
 </head>
 <body>
     <header class="main-header"> <!--Etiqueta parte superior-->
         <div class="container container--flex"> <!--Delimitar el contenido de la pagina-->
         <div class="main-header__container">
-            <h1 class="main-header__title">GOGLES</h1> <!--Titulo superior-->
+            <h1 class="main-header__title">GOOGLES</h1> <!--Titulo superior-->
             <span class="icon-menu fas fa-bars" id="btn-menu"></span><!--icono menu-->
             <nav class="main-nav" id="main-nav">
                 <ul class="menu"><!--5 opciones en el menu-->
                     <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
-                    <li class="menu__item"><a href="" class="menu__link"></a>ABOUT</li>
-                    <li class="menu__item"><a href="" class="menu__link"></a>FEATURES</li>
-                    <li class="menu__item"><a href="" class="menu__link"></a>SHOP</li>
-                    <li class="menu__item"><a href="" class="menu__link"></a>CONTACT</li>
+                    <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
                 </ul>
             </nav> <!--enlace navegación menu-->
         </div>
             <div class="main-header--container"><!--Delimitar el contenido de la pagina-->
         <span class="main-header__txt">Nedd Help</span> <!--Primer texto-->
         <p class="main-header__txt"><i class="fas fa-phone"></i> Call 123456789</p><!--Texto numero cel-->
-    </div>
+            </div>
     <div class="main-header__container">
         <i class="fas fa-user"></i><!--icono persona-->
         <a href="" class="main-header__btn"> My cart<i class="fas fa-shopping-cart"></i></a> <!--icono y texto my cart-->
-        <input type="search" class="main-header:__input" placeholder="Buscar productos"><i class="fas fa-search"></i><!--busqueda e icono-->
+        <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i><!--busqueda e icono-->
     </div>
-</div>
+        </div>
     </header>
-    
+
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img/img1.jpg" alt="" class="slider__img">
+            </div>
+
+            <div class="slider__section">
+                <img src="img/img2.jpg" alt="" class="slider__img">
+            </div>
+
+            <div class="slider__section">
+                <img src="img/img3.jpg" alt="" class="slider__img">
+            </div>
+
+            <div class="slider__section">
+                <img src="img/img4.jpg" alt="" class="slider__img">
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+
+<script src="slider.js"></script>
 </body>
 </html>
