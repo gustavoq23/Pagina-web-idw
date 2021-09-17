@@ -72,7 +72,7 @@ img {
 .slider:before{
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 50;
     top: 0;
     left: 0;
     width: 100%;
@@ -119,3 +119,36 @@ img {
 .slider__btn--right {
     right: 10px;
   }
+
+.slider__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:white;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+    z-index: 999;
+}
+
+.slider__title{
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.slider__txt{
+    text-align: center;
+    margin: 5px 0 ; 
+}
+
+.slider__link{
+    display: block;
+    border: 1px solid #FF4E00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    width: 150px    ;
+}
+
