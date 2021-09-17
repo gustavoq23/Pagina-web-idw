@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title> <!--Titulo navegador--> 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"><!--Link iconos usados-->
 </head>
 <body>
     <header class="main-header"> <!--Etiqueta parte superior-->
-        <div class="container"> <!--Delimitar el contenido de la pagina-->
+        <div class="container container--flex"> <!--Delimitar el contenido de la pagina-->
         <div class="main-header__container">
-            <h1 class="mian__title">GOGLES</h1> <!--Titulo superior-->
-            <span class="fas fa-bars"></span><!--icono menu-->
+            <h1 class="main-header__title">GOGLES</h1> <!--Titulo superior-->
+            <span class="icon-menu fas fa-bars" id="btn-menu"></span><!--icono menu-->
+            <nav class="main-nav" id="main-nav">
+                <ul class="menu"><!--5 opciones en el menu-->
+                    <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                    <li class="menu__item"><a href="" class="menu__link"></a>ABOUT</li>
+                    <li class="menu__item"><a href="" class="menu__link"></a>FEATURES</li>
+                    <li class="menu__item"><a href="" class="menu__link"></a>SHOP</li>
+                    <li class="menu__item"><a href="" class="menu__link"></a>CONTACT</li>
+                </ul>
+            </nav> <!--enlace navegación menu-->
         </div>
             <div class="main-header--container"><!--Delimitar el contenido de la pagina-->
         <span class="main-header__txt">Nedd Help</span> <!--Primer texto-->
-        <p class="main-header__txt">Call 123456789</p><!--Texto numero cel-->
+        <p class="main-header__txt"><i class="fas fa-phone"></i> Call 123456789</p><!--Texto numero cel-->
     </div>
     <div class="main-header__container">
         <i class="fas fa-user"></i><!--icono persona-->
-        <a href="">My cart <i class="fas fa-shopping-cart"></i></a> <!--icono y texto my cart-->
-        <input type="search"><i class="fas fa-search"></i><!--busqueda e icono-->
+        <a href="" class="main-header__btn"> My cart<i class="fas fa-shopping-cart"></i></a> <!--icono y texto my cart-->
+        <input type="search" class="main-header:__input" placeholder="Buscar productos"><i class="fas fa-search"></i><!--busqueda e icono-->
     </div>
 </div>
     </header>
+    
 </body>
 </html>
