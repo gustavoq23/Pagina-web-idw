@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title> <!--Titulo navegador--> 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"><!--Link iconos usados-->
 </head>
 <body>
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <div class="container-slider">
+    <div class="container-slider"> <!-- Contenedor de las imagenes en slider-->
         <div class="slider" id="slider">
             <div class="slider__section">
                 <img src="img/img1.jpg" alt="" class="slider__img">
@@ -79,12 +79,45 @@
     </div>
 
     <main class="main">
+        <div class="container">
         <h2 class="main-title">New arrivals for you</h2>
-        <section class="container-products">
-            <div class="products"></div>
+        <section class="container-products"><!--Seccion de los productos con su precio-->
+            <div class="product">
+                <img src="img/img_shop1.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">nombregafas</h3>
+                    <span class="product__price">1000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/img_shop2.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">nombregafas</h3>
+                    <span class="product__price">1000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/img_shop3.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">nombregafas</h3>
+                    <span class=" product__price">1000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/img_shop4.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">nombregafas</h3>
+                    <span class="product__price">1000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
         </section>
+        </div>
     </main>
 
-<script src="slider.js"></script>
+<script src="js/slider.js"></script> <!--Archivo de javascript para el efecto del slider-->
 </body>
 </html>
