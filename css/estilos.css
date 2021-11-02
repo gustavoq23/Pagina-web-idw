@@ -35,9 +35,9 @@ img {
   font-family: "Poppins";
 }
 
-.main-nav {
+/* .main-nav {
   display: none;
-}
+} */
 
 .main-header__container {
   display: flex;
@@ -286,16 +286,22 @@ img {
   background: #F7F7F7;
   margin: 10px 0px;
   text-align: center;
-  background-image: url('../img/img_shop3.jpg');;
+  background-image: url('../img/img_shop3.jpg');
+  ;
 }
 
-.container__clockDown > div{
+.container__clockDown>div {
   color: #fff;
   display: flex;
   justify-content: space-evenly;
 }
-.container__clockDown > div h1 {
+
+.container__clockDown>div h1 {
   font-size: 60px;
+}
+
+#clockMileSeconds {
+  color: #e7e7ee;
 }
 
 .container__testimonials {
@@ -388,6 +394,7 @@ img {
   .main-header .container--flex {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .main-header__container {
     flex-wrap: wrap;
@@ -396,76 +403,135 @@ img {
   .main-header__txt {
     width: 100%;
   }
-  .main-header__container:nth-child(2) {
+  /* .main-header__container:nth-child(2) {
     order: -1;
     width: 25%;
-  }
-  .main-header__container:nth-child(3) {
+  } */
+  /* .main-header__container:nth-child(3) {
     width: 25%;
-    padding: 0 20px;
-  }
-  .main-header__title {
-    width: 100%;
-    font-size: 4em;
-    margin: 0;
-    border-bottom: 1px solid #ccc;
-  }
-  .main-header__link {
-    margin-bottom: 20px;
-  }
-  .main-header__btn {
-    width: 130px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  .main-header__input {
-    width: 85%;
-  }
-  .main-nav {
-    visibility: visible;
-    opacity: 1;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .menu {
-    position: static;
-    width: 100%;
-    display: flex;
-    background: none;
-  }
-  .menu__link {
-    color: #333;
-  }
-  .menu__link:hover {
-    background: #333;
-    color: white;
-  }
-  .container-products {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-  }
-  .product__img {
-    height: 150px;
-  }
-  .container__testimonials {
-    font-size: 1.3em;
-  }
-  .container-editor {
-    display: flex;
-    justify-content: space-between;
-  }
-  .editor__item {
-    width: 48%;
-  }
-  .main-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-  }
-  .copy {
-    grid-column-start: span 4;
-    text-align: center;
-  }
+    padding: 0 20px; */
+}
+
+.main-header__title {
+  width: 100%;
+  font-size: 4em;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-header__link {
+  margin-bottom: 20px;
+}
+
+.main-header__btn {
+  width: 130px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.main-header__input {
+  width: 85%;
+}
+
+.main-nav {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.menu {
+  position: static;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu__item {
+  padding: 5px 10px;
+  list-style: none;
+  transition: all .25s ease-out;
+}
+
+.menu__item:hover {
+  background: #333;
+}
+
+.menu__item:hover .menu__link {
+  color: white;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #333;
+}
+
+.container-products {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.product__img {
+  height: 150px;
+}
+
+.container_center {
+  display: flex;
+  justify-content: center;
+}
+
+.container_md {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.container__md__100 {
+  padding: 0 15px;
+  flex-grow: 0;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.container__md__33 {
+  padding: 0 15px;
+  flex-grow: 0;
+  flex-basis: 33.3333%;
+  max-width: 33.3333%;
+}
+
+.container__md__50 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+  padding: 0 15px;
+}
+
+.container__testimonials {
+  font-size: 1.3em;
+}
+
+.container-editor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor__item {
+  width: 48%;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.copy {
+  grid-column-start: span 4;
+  text-align: center;
+}
+
 }
 
 @media screen and (min-width:1280px) {

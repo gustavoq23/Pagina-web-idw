@@ -13,11 +13,17 @@
   <link rel="icon" type="image/png" href="img/img_shop2.jpg">
   <!--imagen en ek titulo de la pagina superior izqueirda-->
 </head>
-
 <body>
   <header class="main-header">
     <!--Etiqueta parte superior-->
     <div class="container container--flex">
+      <div class="main-header--container">
+        <!--Delimitar el contenido de la pagina-->
+        <span class="main-header__txt">Necesitas ayuda</span>
+        <!--Primer texto-->
+        <p class="main-header__txt"><i class="fas fa-phone"></i>Llama al 123456789</p>
+        <!--Texto numero cel-->
+      </div>
       <!--Delimitar el contenido de la pagina-->
       <div class="main-header__container">
         <h1 class="main-header__title">GOGGLES</h1>
@@ -28,20 +34,13 @@
           <ul class="menu">
             <!--5 opciones en el menu-->
             <li class="menu__item"><a href="" class="menu__link">HOGAR</a></li>
-            <li class="menu__item"><a href="" class="menu__link">ACERCA DE</a></li>
+            <li class="menu__item"><a href="./aboutus.html" class="menu__link">ACERCA DE</a></li>
             <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
             <li class="menu__item"><a href="" class="menu__link">VENTAS</a></li>
             <li class="menu__item"><a href="" class="menu__link">CONTACTO</a></li>
           </ul>
         </nav>
         <!--enlace navegación menu-->
-      </div>
-      <div class="main-header--container">
-        <!--Delimitar el contenido de la pagina-->
-        <span class="main-header__txt">Nedd Help</span>
-        <!--Primer texto-->
-        <p class="main-header__txt"><i class="fas fa-phone"></i> Call 123456789</p>
-        <!--Texto numero cel-->
       </div>
       <div class="main-header__container">
         <i class="fas fa-user"></i>
@@ -53,7 +52,6 @@
       </div>
     </div>
   </header>
-
   <div class="container-slider">
     <!-- Contenedor de las imagenes en slider-->
     <div class="slider" id="slider">
@@ -96,7 +94,6 @@
     <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
     <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
   </div>
-
   <main class="main">
     <h2 class="main-title">New arrivals for you</h2>
     <section class="container-products">
@@ -135,27 +132,28 @@
       </div>
     </section>
     <section class="container__clockDown">
-      <!-- <div class="product"> -->
-        <!-- <img src="img/img_shop3.jpg" alt="" class="product__img"> -->
-        <div class="">
-          <div>
-            <h1 id="clockDays">00</h1>
-            <p>Dias</p>
-          </div>
-          <div>
-            <h1 id="clockHours">00</h1>
-            <p>Horas</p>
-          </div>
-          <div>
-            <h1 id="clockMinutes">00</h1>
-            <p>Minutos</p>
-          </div>
-          <div>
-            <h1 id="clockSeconds">00</h1>
-            <p>Segudos</p>
-          </div>
+      <div class="">
+        <div>
+          <h1 id="clockDays">00</h1>
+          <p>Dias</p>
         </div>
-      <!-- </div> -->
+        <div>
+          <h1 id="clockHours">00</h1>
+          <p>Horas</p>
+        </div>
+        <div>
+          <h1 id="clockMinutes">00</h1>
+          <p>Minutos</p>
+        </div>
+        <div>
+          <h1 id="clockSeconds">00</h1>
+          <p>Segudos</p>
+        </div>
+        <div>
+          <h1 id="clockMileSeconds">00</h1>
+          <p>Segudos</p>
+        </div>
+      </div>
     </section>
     <section class="container__testimonials">
       <h2 class="section__title">Testimonials</h2>
